@@ -772,4 +772,35 @@ form textarea:focus {
         padding-top: 100px;
         height: auto;
     }
+
+    .home-text {
+    }
+
+    .home-text p {
+        text-align: center;
+        max-width: 100vw;
+    }
+
+    .home-text h1,
+    .home-text h3 {
+        text-align: center;
+    }
+
+    .home .slide {
+        text-align: center;
+    }
+
+    .contact-text h2 {
+        font-size: var(--p-font);
+    }
+
+    .box {
+        min-height: 200px;
+    }
+
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
