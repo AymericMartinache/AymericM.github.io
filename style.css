@@ -306,6 +306,13 @@ header.sticky {
     transition: all.45s ease;
 }
 
+.apprentissage li {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
 .s-icons {
     width: 100%;
     margin-bottom: 20px;
@@ -502,7 +509,7 @@ header.sticky {
 }
 
 .contact-icons {
-    margin-top: 80px;
+    margin-top: 40px;
 }
 
 .contact-icons i {
@@ -745,5 +752,24 @@ form textarea:focus {
         width: 100%;
         border-radius: 10px;
         transition: all 0.5s ease;
+    }
+}
+
+@media (max-width: 600px) {
+    body {
+        font-size: 12px;
+    }
+
+    header {
+        margin-bottom: 100px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .home {
+        padding-top: 100px;
+        height: auto;
     }
 }
