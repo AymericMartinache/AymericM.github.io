@@ -782,11 +782,9 @@ form textarea:focus {
     }
 
     .home-text h1,
-    .home-text h3 {
-        text-align: center;
-    }
-
-    .home .slide {
+    .home-text h3,
+    .home .slide,
+    .about-text h2 {
         text-align: center;
     }
 
