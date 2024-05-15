@@ -95,11 +95,15 @@ section {
     position: relative;
     height: 100vh;
     width: 100%;
-    background: ;
-    background-repeat: no-repeat;
+    z-index: 1000;
+    /* background-repeat: no-repeat; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    background-image: url(https://github.com/AymericMartinache/AymericM.github.io/blob/main/img/background.png?raw=true);
+    /* background-color: #111; */
+    background-position: center;
+    background-size: cover;
 }
 
 .slide {
@@ -212,6 +216,7 @@ header.sticky {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     gap: 1.5rem;
+    background-image: url();
 }
 
 .about-img img {
