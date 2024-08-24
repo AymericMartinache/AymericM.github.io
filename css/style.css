@@ -151,8 +151,8 @@ section {
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
-    margin-bottom: 40px;
-    max-width: 60vw;
+    margin-bottom: 2rem;
+    max-width: 50vw;
 }
 
 .button {
@@ -249,7 +249,7 @@ header.sticky {
     color: var(--second-color);
     font-size: var(--p-font);
     line-height: 1.8;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 /* Services section */
