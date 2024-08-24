@@ -302,7 +302,7 @@ header.sticky {
 }
 
 .box {
-    min-height: 400px;
+    min-height: 450px;
     min-width: 300px;
     background: var(--bg-color);
     padding: 15px 25px;
@@ -375,7 +375,7 @@ header.sticky {
     width: 40px;
     height: 40px;
     object-fit: cover;
-    margin: 0 auto;
+    /* margin: 0 auto; */
 }
 
 /* PORTFOLIO SECTION */
@@ -458,6 +458,18 @@ header.sticky {
 
 .row:hover .layer {
     height: 100%;
+}
+
+.language-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-list__item {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /* contact section */
@@ -797,10 +809,6 @@ form textarea:focus {
 
     .contact-text h2 {
         font-size: var(--p-font);
-    }
-
-    .box {
-        min-height: 200px;
     }
 
     .button {
