@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
@@ -132,7 +132,7 @@ section {
 
 .home-text h1 {
     font-size: var(--big-font);
-    font-family: "Protest Revolution", sans-serif;
+    font-family: 'Protest Revolution', sans-serif;
     font-weight: 400;
     color: var(--text-color);
     line-height: 1.1;
@@ -378,6 +378,18 @@ header.sticky {
     /* margin: 0 auto; */
 }
 
+.language-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-list__item {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* PORTFOLIO SECTION */
 .portfolio-content {
     display: grid;
@@ -460,21 +472,9 @@ header.sticky {
     height: 100%;
 }
 
-.language-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.language-list__item {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* contact section */
 .contact {
-    background: var(--bg-color);
+    background-color: var(--bg-color-bg-color);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
