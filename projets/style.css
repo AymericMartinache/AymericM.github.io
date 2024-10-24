@@ -132,3 +132,27 @@ p {
     line-height: 1.7;
     margin: 15px 0;
 }
+
+/* FOOTER */
+.end {
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--second-bg-color);
+}
+
+.end-text p {
+    color: var(--second-color);
+    font-size: 0.6rem;
+}
+
+.top i {
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: var(--text-color);
+    background: var(--main-color);
+}

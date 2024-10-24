@@ -41,7 +41,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 22px 15%;
+    padding: 22px 10%;
     border-bottom: 1px solid transparent;
     transition: all 1s ease-in-out;
 }
