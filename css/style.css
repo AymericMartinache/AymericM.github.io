@@ -681,7 +681,7 @@ form textarea:focus {
     }
 
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .home-text h3 {
@@ -695,7 +695,7 @@ form textarea:focus {
 
 @media (max-width: 920px) {
     .logo {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .about {
@@ -723,9 +723,17 @@ form textarea:focus {
         display: block;
     }
 
+    section {
+    }
     .home {
+        height: 100vh;
         background-image: none;
         background-color: black;
+        text-align: center;
+    }
+    .home-text p {
+        text-align: center;
+        max-width: 100vw;
     }
 
     .navlist {
