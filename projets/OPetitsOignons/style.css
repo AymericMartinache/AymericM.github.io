@@ -77,14 +77,26 @@ p {
 
 /* TECHNOS */
 .service-content {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    display: flex; /* Utilisation de Flexbox pour un centrage plus facile */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 3rem; /* Espace entre les box */
     max-width: 80vw;
-    align-items: center;
-    gap: 5rem;
-    margin: 5rem auto 10px auto;
+    margin: 2rem auto 10px auto;
+    border: 1px solid red;
 }
 
+.box {
+    width: 400px; /* Taille fixe pour toutes les box */
+    height: 400px; /* Taille fixe pour toutes les box */
+    background: var(--bg-color);
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: all 0.45s ease;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+}
 .service-content li {
     margin: 10px 0;
     font-weight: 100;
@@ -92,14 +104,6 @@ p {
 
 .projet-tech_section {
     background-color: var(--second-bg-color);
-}
-.box {
-    min-height: 450px;
-    min-width: 300px;
-    background: var(--bg-color);
-    padding: 15px 25px;
-    border-radius: 8px;
-    transition: all.45s ease;
 }
 
 .s-icons {

@@ -474,7 +474,7 @@ header.sticky {
 
 /* contact section */
 .contact {
-    background-color: var(--bg-color-bg-color);
+    background-color: var(--second-bg-color);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
