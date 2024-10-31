@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
 }
 
-/* variables colors */
+/* Variables colors */
 :root {
     --bg-color: #2a2a2a;
     --second-bg-color: #202020;
@@ -30,7 +30,7 @@ body {
     color: var(--text-color);
 }
 
-/* header */
+/* Header section */
 header {
     position: fixed;
     width: 100%;
@@ -86,7 +86,7 @@ span {
     display: none;
 }
 
-/* home section */
+/* Home section */
 section {
     padding: 160px 15% 120px;
 }
@@ -261,21 +261,6 @@ header.sticky {
     text-align: center;
 }
 
-#CV {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-}
-
-#CV a {
-    display: flex;
-    align-items: center;
-}
-
-#CV img {
-    margin-right: 10px;
-}
-
 .main-text p {
     color: var(--second-color);
     font-size: 15px;
@@ -390,6 +375,24 @@ header.sticky {
     align-items: center;
 }
 
+#CV {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+#CV a {
+    display: flex;
+    align-items: center;
+}
+
+#CV img {
+    margin-right: 10px;
+}
+
+#CV .bx-icon {
+    width: 2rem;
+}
 /* PORTFOLIO SECTION */
 .portfolio-content {
     display: grid;
@@ -409,6 +412,7 @@ header.sticky {
 .row img {
     width: 100%;
     height: 300px;
+    opacity: 0.6;
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
