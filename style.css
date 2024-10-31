@@ -85,12 +85,11 @@ span {
     margin-left: 25px;
     display: none;
 }
-
-/* Home section */
 section {
     padding: 160px 15% 120px;
 }
 
+/* Home section */
 .home {
     position: relative;
     height: 100vh;
