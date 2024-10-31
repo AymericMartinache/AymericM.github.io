@@ -2,13 +2,13 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Poppins', sans-serif;
     text-decoration: none;
     list-style: none;
     scroll-behavior: smooth;
 }
 
-/* variables colors */
+/* Variables colors */
 :root {
     --bg-color: #2a2a2a;
     --second-bg-color: #202020;
@@ -30,7 +30,7 @@ body {
     color: var(--text-color);
 }
 
-/* header */
+/* Header section */
 header {
     position: fixed;
     width: 100%;
@@ -41,7 +41,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background: transparent;
-    padding: 22px 15%;
+    padding: 22px 10%;
     border-bottom: 1px solid transparent;
     transition: all 1s ease-in-out;
 }
@@ -86,7 +86,7 @@ span {
     display: none;
 }
 
-/* home section */
+/* Home section */
 section {
     padding: 160px 15% 120px;
 }
@@ -132,7 +132,7 @@ section {
 
 .home-text h1 {
     font-size: var(--big-font);
-    font-family: "Protest Revolution", sans-serif;
+    font-family: 'Protest Revolution', sans-serif;
     font-weight: 400;
     color: var(--text-color);
     line-height: 1.1;
@@ -261,21 +261,6 @@ header.sticky {
     text-align: center;
 }
 
-#CV {
-    display: flex;
-    justify-content: center;
-    margin-top: 45px;
-}
-
-#CV a {
-    display: flex;
-    align-items: center;
-}
-
-#CV img {
-    margin-right: 10px;
-}
-
 .main-text p {
     color: var(--second-color);
     font-size: 15px;
@@ -378,6 +363,36 @@ header.sticky {
     /* margin: 0 auto; */
 }
 
+.language-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.language-list__item {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#CV {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+#CV a {
+    display: flex;
+    align-items: center;
+}
+
+#CV img {
+    margin-right: 10px;
+}
+
+#CV .bx-icon {
+    width: 2rem;
+}
 /* PORTFOLIO SECTION */
 .portfolio-content {
     display: grid;
@@ -397,6 +412,7 @@ header.sticky {
 .row img {
     width: 100%;
     height: 300px;
+    opacity: 0.6;
     object-fit: cover;
     object-position: center;
     border-radius: 8px;
@@ -460,21 +476,9 @@ header.sticky {
     height: 100%;
 }
 
-.language-list {
-    display: flex;
-    flex-direction: column;
-}
-
-.language-list__item {
-    width: 70%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 /* contact section */
 .contact {
-    background: var(--bg-color);
+    background-color: var(--second-bg-color);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
@@ -681,7 +685,7 @@ form textarea:focus {
     }
 
     .logo {
-        font-size: 1.3rem;
+        font-size: 1.4rem;
     }
 
     .home-text h3 {
@@ -695,7 +699,7 @@ form textarea:focus {
 
 @media (max-width: 920px) {
     .logo {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .about {
@@ -723,9 +727,17 @@ form textarea:focus {
         display: block;
     }
 
+    section {
+    }
     .home {
+        height: 100vh;
         background-image: none;
         background-color: black;
+        text-align: center;
+    }
+    .home-text p {
+        text-align: center;
+        max-width: 100vw;
     }
 
     .navlist {

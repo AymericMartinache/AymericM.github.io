@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>O'petits Oignons</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/png" href="./ico/favicon.ico" />
+    </head>
+    <body>
+        <h1>Projet <span>O'petits Oignons</span></h1>
+
+        <!-- Section d'introduction -->
+        <section class="projet-home_section" id="home">
+            <img
+                src="./img/Oignon-logo.png"
+                alt="logo o'petits oignons"
+                class="projet-home_logo"
+            />
+            <h2>O'petits Oignons... Qu'est-ce que c'est ?</h2>
+            <p>
+                "O’Petits Oignons" est une plateforme innovante dédiée à la mise
+                en relation entre producteurs locaux et consommateurs soucieux
+                de consommer de manière responsable. Elle permet aux
+                utilisateurs de commander en ligne des produits frais
+                directement auprès des agriculteurs et autres producteurs, avec
+                un retrait en mode Click & Collect.
+            </p>
+            <br />
+            <p>
+                "O'Petits Oignons" représente un projet complet et structuré, de
+                la conception des interfaces jusqu'à la gestion de la base de
+                données et la sécurité. Il vise à promouvoir la consommation
+                locale et responsable via une plateforme performante, intuitive
+                et sécurisée.
+            </p>
+        </section>
+
+        <!-- Contexte du projet -->
+        <section class="projet-contexte_section">
+            <h2>Contexte du projet</h2>
+            <p>
+                Ce projet a été développé dans le cadre de ma formation de
+                développeur web, en équipe, afin de répondre à un besoin de
+                consommation plus responsable et durable. Nous avons appliqué
+                une méthodologie agile (Scrum) pour une organisation optimale,
+                avec quatre sprints hebdomadaires pour chaque phase de
+                développement.
+            </p>
+            <div id="projet-file">
+                <a
+                    href="../../docs/Dossier_projet.pdf"
+                    target="_blank"
+                    class="btn"
+                >
+                    <img
+                        class="bx-icon"
+                        src="../../ico/download-24.png"
+                        alt="logo télécharger"
+                    />
+                    Dossier de projet</a
+                >
+            </div>
+        </section>
+
+        <!-- Aspects techniques -->
+        <section class="projet-tech_section">
+            <h2>Aspects techniques</h2>
+            <p>Ce projet repose sur une architecture full-stack moderne.</p>
+            <div class="service-content">
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="../../ico/clavier-94.png"
+                            alt="Icone Clavier"
+                        />
+                        <h3>Frontend</h3>
+                    </div>
+                    <p>
+                        Développé avec <strong>React</strong> et
+                        <strong>Next.js</strong>, le frontend offre une
+                        expérience utilisateur dynamique et optimisée, avec une
+                        gestion de l'état assurée par
+                        <strong>Redux Toolkit</strong>. Le style est géré via
+                        <strong>Tailwind CSS</strong> pour une interface
+                        responsive et accessible, en adoptant une approche
+                        "mobile-first".
+                    </p>
+                    <div class="icones-list">
+                        <img
+                            src="../../ico/html-24.png"
+                            alt=""
+                            class="icone-item"
+                        />
+                        <img
+                            src="../../ico/css-24.png"
+                            alt=""
+                            class="icone-item"
+                        />
+                        <img
+                            src="../../ico/javascript-24.png"
+                            alt=""
+                            class="icone-item"
+                        />
+                        <img
+                            src="../../ico/react-24.png    "
+                            alt=""
+                            class="icone-item"
+                        />
+                        <img
+                            src="../../ico/NextJS-24.png"
+                            alt=""
+                            class="icone-item"
+                            style="border-radius: 50%"
+                        />
+                        <img
+                            src="../../ico/Tailwind-24.png"
+                            alt=""
+                            class="icone-item"
+                        />
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="../../ico/sac.png"
+                            alt="Icone Clavier"
+                        />
+                        <h3>Backend</h3>
+                    </div>
+                    <p>
+                        Le backend, développé en <strong>Symfony</strong>,
+                        utilise <strong>Doctrine ORM</strong> pour la gestion de
+                        la base de données. Les utilisateurs sont authentifiés
+                        via des <strong>tokens JWT</strong>, sécurisant ainsi
+                        l'accès aux ressources de l'application.
+                    </p>
+
+                    <div class="icones-list">
+                        <img
+                            src="../../ico/icons8-php-80.png"
+                            alt=""
+                            class="icone-item"
+                        />
+                        <img
+                            src="../../ico/icons8-symfony-96.png"
+                            alt=""
+                            class="icone-item"
+                        />
+                        <img
+                            src="../../ico/Doctrine.png"
+                            alt=""
+                            class="icone-item"
+                        />
+                        <img
+                            src="../../ico/twig.webp"
+                            alt=""
+                            class="icone-item"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités clés -->
+        <section class="projet-fonctionnalites_section">
+            <h2>Fonctionnalités clés</h2>
+            <ul>
+                <li>
+                    <strong>Authentification et gestion des comptes :</strong>
+                    Inscription et connexion pour les utilisateurs, avec
+                    différents rôles (consommateurs, producteurs).
+                </li>
+                <li>
+                    <strong>Recherche de producteurs et produits :</strong>
+                    Consultation d'une liste de producteurs locaux avec détails
+                    produits et géolocalisation sur carte interactive.
+                </li>
+                <li>
+                    <strong>Panier et commande :</strong> Gestion du panier avec
+                    possibilité de passer commande pour un retrait en Click &
+                    Collect.
+                </li>
+                <li>
+                    <strong>Back-office :</strong> Interface dédiée pour
+                    l'administration du site et la gestion des utilisateurs,
+                    produits, et commandes.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sécurité et performances -->
+        <section class="projet-securite_section">
+            <h2>Sécurité et performance</h2>
+            <p>
+                Plusieurs mesures de sécurité sont mises en place comme
+                l'<strong>authentification JWT</strong> pour les utilisateurs,
+                <strong>HTTPS</strong> pour chiffrer les échanges, et validation
+                des données pour se prémunir contre les failles
+                <strong>XSS</strong> et <strong>CSRF</strong>.
+            </p>
+            <p>
+                Le frontend utilise le
+                <strong>server-side rendering (SSR)</strong> de
+                <strong>Next.js</strong>
+                pour améliorer les performances et le <strong>SEO</strong>.
+            </p>
+        </section>
+
+        <!-- Gallery -->
+        <section class="projet-gallery_section">
+            <h2>En images...</h2>
+            <div class="gallery">
+                <img src="./img/img1.png" alt="Image 1" class="gallery-item" />
+                <img src="./img/img2.png" alt="Image 2" class="gallery-item" />
+                <img src="./img/img3.png" alt="Image 3" class="gallery-item" />
+                <img src="./img/img4.png" alt="Image 4" class="gallery-item" />
+                <img src="./img/img5.png" alt="Image 5" class="gallery-item" />
+            </div>
+
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightboxImage" />
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+            <div class="footer-text">
+                <p>Copyright © 2024 - MRikCorp</p>
+            </div>
+            <div class="top">
+                <button onclick="scrollToTop()">
+                    <i class="bx bx-up-arrow-alt"></i>
+                </button>
+            </div>
+        </section>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
