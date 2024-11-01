@@ -287,7 +287,7 @@ header.sticky {
 
 .box {
     min-height: 450px;
-    min-width: 300px;
+    min-width: 400px;
     background: var(--bg-color);
     padding: 15px 25px;
     border-radius: 8px;
@@ -395,13 +395,14 @@ header.sticky {
 /* PORTFOLIO SECTION */
 .portfolio-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     align-items: center;
     gap: 2.5rem;
     margin-top: 5rem;
 }
 
 .row {
+    width: 100%;
     position: relative;
     overflow: hidden;
     border-radius: 15px;
