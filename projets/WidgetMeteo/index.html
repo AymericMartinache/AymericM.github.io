@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Widget Météo</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/png" href="./ico/favicon.ico" />
+    </head>
+    <body>
+        <h1>Widget <span>Météo</span></h1>
+
+        <!-- Section d'introduction -->
+        <section class="projet-home_section" id="home">
+            <img
+                src="./img/weather-icone.svg"
+                alt="logo o'petits oignons"
+                class="projet-home_logo"
+            />
+            <p>
+                Ce projet a été mis en place durant ma formation à l'école
+                O'clock. Il m'a permis de mettre en pratique les différentes
+                notions apprises durant ma spécialisation Frontend.
+            </p>
+            <br />
+            <p>
+                Cette application météo développée avec React permet aux
+                utilisateurs de rechercher des informations météorologiques pour
+                diverses villes en temps réel. L’application est réactive,
+                élégante et intègre des animations fluides lors de l’ajout et de
+                la suppression de villes, offrant ainsi une expérience
+                utilisateur soignée et agréable.
+            </p>
+            <div id="projet-file">
+                <a
+                    href="https://mrik-meteowidget.vercel.app/"
+                    target="_blank"
+                    class="btn"
+                >
+                    <img
+                        class="icon"
+                        src="../../ico/internet-50.png"
+                        alt="logo télécharger"
+                    />
+                    Accéder au widget</a
+                >
+            </div>
+            <div id="projet-file">
+                <a
+                    href="https://github.com/AymericMartinache/MeteoWidget.git"
+                    target="_blank"
+                    class="btn"
+                >
+                    <img
+                        class="icon"
+                        src="../../ico/github-60.png"
+                        alt="logo télécharger"
+                    />
+                    Accéder au repo</a
+                >
+            </div>
+        </section>
+
+        <!-- Aspects techniques -->
+        <section class="projet-tech_section">
+            <h2>Aspects techniques</h2>
+            <p>Ce projet repose sur une architecture frontend simple.</p>
+            <div class="service-content">
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="../../ico/clavier-94.png"
+                            alt="Icone Clavier"
+                        />
+                        <h3>Frontend</h3>
+                    </div>
+
+                    <p>
+                        <strong>React</strong> permet de créer une interface
+                        utilisateur dynamique et réactive, idéale pour les
+                        applications nécessitant des mises à jour rapides et
+                        fluides. <strong>Axios</strong> est utilisé pour les
+                        requêtes HTTP, rendant les appels API plus faciles à
+                        gérer tout en assurant une communication efficace avec
+                        le serveur. <strong>TypeScript</strong> ajoute des types
+                        statiques à JavaScript, améliorant la fiabilité et la
+                        maintenabilité du code en détectant les erreurs dès la
+                        compilation, garantissant ainsi un code robuste et
+                        performant.
+                    </p>
+
+                    <p>
+                        Pour un développement plus rapide,
+                        <strong>Vite</strong> est intégré, offrant un
+                        rechargement instantané et des performances optimisées,
+                        parfaitement adapté aux projets React.
+                    </p>
+
+                    <p></p>
+                    <div class="icones-list">
+                        <img
+                            src="../../ico/react-24.png    "
+                            alt="icone REACT"
+                            class="icone-item"
+                        />
+                        <img
+                            src="./img/vite-48.png"
+                            alt="icone Vite"
+                            class="icone-item"
+                            style="border-radius: 50%"
+                        />
+                        <img
+                            src="./img/axios-icone.png"
+                            alt="icone Axios"
+                            class="icone-item"
+                        />
+                        <img
+                            src="./img/typescript-48.png"
+                            alt="icone TypeScript"
+                            class="icone-item"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités clés -->
+        <section class="projet-fonctionnalites_section">
+            <h2>Fonctionnalités clés</h2>
+            <ul>
+                <li>
+                    <strong>Recherche de villes :</strong>
+                    Saisie d'un nom de ville pour obtenir les informations météo
+                    en temps réel, avec validation du format de l'entrée.
+                </li>
+                <li>
+                    <strong>Affichage des données météo :</strong>
+                    Affichage de la température actuelle, des conditions météo
+                    et d'icônes pour chaque ville ajoutée, permettant un aperçu
+                    rapide des conditions météorologiques.
+                </li>
+                <li>
+                    <strong>Gestion des erreurs :</strong>
+                    Affichage de messages d'erreur en cas de recherche
+                    infructueuse ou de ville inexistante, avec disparition
+                    automatique après quelques secondes.
+                </li>
+                <li>
+                    <strong>Ajout et suppression de villes :</strong>
+                    Possibilité d'ajouter et de supprimer des villes de la
+                    liste, avec des animations fluides pour améliorer
+                    l'expérience utilisateur.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Gallery -->
+        <section class="projet-gallery_section">
+            <h2>En images...</h2>
+            <div class="gallery">
+                <img src="./img/img1.png" alt="Image 1" class="gallery-item" />
+                <img src="./img/img2.png" alt="Image 2" class="gallery-item" />
+                <img src="./img/img3.png" alt="Image 3" class="gallery-item" />
+            </div>
+
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightboxImage" />
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+            <div class="footer-text">
+                <p>Copyright © 2024 - MRikCorp</p>
+            </div>
+            <div class="top">
+                <button onclick="scrollToTop()">
+                    <i class="bx bx-up-arrow-alt"></i>
+                </button>
+            </div>
+        </section>
+
+        <script src="./script.js"></script>
+    </body>
+</html>

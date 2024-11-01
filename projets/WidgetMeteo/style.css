@@ -55,7 +55,7 @@ strong {
 
 /* HOME */
 .projet-home_section {
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 .projet-home_logo {
@@ -77,8 +77,6 @@ p {
     max-width: 70vw;
     margin: 0 auto;
 }
-
-/* CONTEXTE */
 #projet-file {
     display: flex;
     justify-content: center;
@@ -88,23 +86,22 @@ p {
 #projet-file a {
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
-#projet-file img {
-    margin-right: 20px;
-}
-
-#projet-file .bx-icon {
-    width: 30px;
+#projet-file .icon {
+    width: 60px;
+    margin-right: 10px;
 }
 
 .btn {
     display: inline-flex;
-    padding: 12px 28px;
+    width: 320px;
+    padding: 5px;
     background: var(--main-color);
     border-radius: 10px;
     color: var(--text-color);
-    font-size: 1rem;
+    font-size: 1.1rem;
     letter-spacing: 1px;
     font-weight: 600;
     transition: all 0.45s ease;
@@ -132,7 +129,7 @@ p {
 }
 .box {
     width: 400px;
-    height: 500px;
+    height: auto;
     background: var(--bg-color);
     padding: 15px 25px;
     border-radius: 8px;
@@ -203,12 +200,11 @@ p {
     margin: 1rem 0;
 }
 
-/* SECURITE */
-.projet-securite_section {
+/* GALLERY */
+.projet-gallery_section {
     background-color: var(--second-bg-color);
 }
 
-/* GALLERY */
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -235,6 +231,7 @@ p {
 .gallery:hover .gallery-item:not(:hover) {
     filter: blur(5px);
 }
+
 .lightbox {
     display: none;
     position: fixed;
@@ -279,7 +276,7 @@ p {
     align-items: center;
     justify-content: space-between;
     gap: 2rem;
-    background: var(--second-bg-color);
+    background: var(--bg-color);
 }
 
 .footer-text p {
@@ -342,6 +339,10 @@ p {
     p {
         font-size: 1.2rem;
         max-width: 90vw;
+    }
+
+    .btn {
+        font-size: 1rem;
     }
 
     .projet-fonctionnalites_section {
