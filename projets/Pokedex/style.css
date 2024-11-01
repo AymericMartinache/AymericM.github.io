@@ -351,6 +351,11 @@ p {
         max-width: 90vw;
     }
 
+    .projet-home_logo {
+        width: 400px;
+        margin: 0 auto;
+    }
+
     .btn {
         font-size: 1rem;
     }
