@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: disc;
+    scroll-behavior: smooth;
+}
+
+/* variables colors */
+:root {
+    --bg-color: #2a2a2a;
+    --second-bg-color: #202020;
+    --text-color: #fff;
+    --second-color: #ccc;
+    --main-color: #dd6f00;
+    --big-font: 4rem;
+    --h2-font: 3rem;
+    --p-font: 1.1rem;
+}
+
+::selection {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-size: 62.5%;
+    line-height: 2rem;
+}
+
+section {
+    padding: 1.4rem 1.4rem 4rem 1.4rem;
+}
+
+h1 {
+    width: 100vw;
+    text-align: center;
+    font-size: 2.2rem;
+    padding: 1rem;
+    background-color: var(--second-bg-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+h1 span,
+strong {
+    color: var(--main-color);
+}
+
+/* HOME */
+.projet-home_section {
+    margin-top: 4rem;
+}
+
+.projet-home_logo {
+    display: block;
+    width: 200px;
+    margin: 2rem auto;
+    border-radius: 50%;
+}
+
+#api {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.9rem;
+    padding: 1rem;
+}
+
+p {
+    font-size: 1.3rem;
+    text-align: justify;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+#projet-file {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+}
+
+#projet-file a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#projet-file .icon {
+    width: 60px;
+    margin-right: 10px;
+}
+
+.btn {
+    display: inline-flex;
+    width: 320px;
+    padding: 5px;
+    background: var(--main-color);
+    border-radius: 10px;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: all 0.45s ease;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+}
+
+/* TECHNOS */
+.projet-tech_section {
+    background-color: var(--second-bg-color);
+    padding-bottom: 4rem;
+}
+
+.projet-tech_section p {
+    text-align: center;
+}
+.service-content {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    max-width: 80vw;
+    margin: 2rem auto 10px auto;
+}
+.box {
+    width: 500px;
+    height: auto;
+    background: var(--bg-color);
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: all 0.45s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.box:hover {
+    transform: translateY(-20px);
+    transition: all 1s;
+    box-shadow: var(--main-color) 0px 8px 28px, var(--main-color) 0px 12px 40px;
+}
+
+#api {
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.service-content li {
+    margin: 10px 0;
+    font-weight: 100;
+}
+
+.s-icons {
+    width: 100%;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.bx-icon {
+    width: 3rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.icones-list {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.icone-item {
+    width: 3rem;
+}
+.icone-item-next {
+    width: 3rem;
+    border-radius: 50%;
+}
+
+.box h3 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.box h3,
+.box h4 {
+    text-align: center;
+}
+
+.box p {
+    color: var(--second-color);
+    font-size: 1rem;
+    line-height: 1.7;
+    margin: 15px 0;
+}
+
+/* FONCTIONNALITES */
+.projet-fonctionnalites_section {
+    font-size: 1.3rem;
+    max-width: 70vw;
+    margin: 0 auto;
+}
+.projet-fonctionnalites_section li {
+    margin: 1rem 0;
+}
+
+/* GALLERY */
+.projet-gallery_section {
+    background-color: var(--second-bg-color);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+    padding: 20px;
+    justify-items: center;
+}
+
+.gallery-item {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+    height: auto;
+    cursor: pointer;
+    transition: transform 0.3s, filter 0.3s;
+    border: 1px solid var(--text-color);
+}
+
+/* Blur effect on other images when hovering over one */
+.gallery-item:hover {
+    transform: scale(1.1);
+}
+
+/* Blur all items except the one being hovered */
+.gallery:hover .gallery-item:not(:hover) {
+    filter: blur(5px);
+}
+
+.lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50px;
+    right: 100px;
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+/* FOOTER */
+.footer {
+    padding: 20px 15%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    background: var(--bg-color);
+}
+
+.footer-text p {
+    color: var(--second-color);
+    font-size: 0.6rem;
+}
+
+.top button {
+    background-color: var(--main-color); /* Couleur du bouton */
+    border: none; /* Supprime la bordure */
+    border-radius: 50%; /* Rend le bouton rond */
+    width: 50px; /* Taille du bouton (ajuste selon besoin) */
+    height: 50px; /* Taille du bouton (ajuste selon besoin) */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline: none; /* Supprime le contour lors du focus */
+}
+
+.top button i {
+    color: #fff; /* Couleur de l'icône */
+    font-size: 24px; /* Taille de l'icône */
+}
+
+/* FADE IN */
+.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+    /* Positionne l'élément plus haut pour l'effet */
+    transition: opacity 2s ease-out, transform 2s ease-out;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 768px) {
+    .service-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+        max-width: 90vw;
+    }
+
+    .btn {
+        font-size: 1rem;
+    }
+
+    .projet-fonctionnalites_section {
+        max-width: 90vw;
+    }
+
+    .projet-gallery_section {
+        padding-bottom: 02rem;
+    }
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+
+    .close {
+        top: 5px;
+        right: 10px;
+    }
+}
