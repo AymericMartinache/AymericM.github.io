@@ -401,6 +401,7 @@ header.sticky {
 
 .row {
     width: 100%;
+    position: relative;
     overflow: hidden;
     border-radius: 15px;
     cursor: pointer;
