@@ -271,10 +271,10 @@ header.sticky {
 
 .service-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     max-width: 80vw;
     align-items: center;
-    gap: 5rem;
+    gap: 1rem;
     margin: 5rem auto 10px auto;
 }
 
@@ -285,11 +285,11 @@ header.sticky {
 
 .box {
     min-height: 450px;
-    min-width: 400px;
     background: var(--bg-color);
     padding: 15px 25px;
     border-radius: 8px;
-    transition: all.45s ease;
+    margin: 1rem;
+    transition: all 0.45s ease;
 }
 
 .apprentissage li {
@@ -357,7 +357,6 @@ header.sticky {
     width: 40px;
     height: 40px;
     object-fit: cover;
-    /* margin: 0 auto; */
 }
 
 .language-list {
@@ -391,6 +390,10 @@ header.sticky {
     width: 2rem;
 }
 /* PORTFOLIO SECTION */
+
+.portfolio {
+    padding-top: 4rem;
+}
 .portfolio-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -725,8 +728,6 @@ form textarea:focus {
         display: block;
     }
 
-    section {
-    }
     .home {
         height: 100vh;
         background-image: none;
@@ -790,6 +791,7 @@ form textarea:focus {
 @media (max-width: 600px) {
     body {
         font-size: 12px;
+        width: 100vw;
     }
 
     header {
