@@ -10,11 +10,11 @@
 
 /* Variables colors */
 :root {
-    --bg-color: #2a2a2a;
-    --second-bg-color: #202020;
-    --text-color: #fff;
+    --bg-color: #272727;
+    --second-bg-color: #191919;
+    --text-color: #ffffff;
     --second-color: #ccc;
-    --main-color: #dd6f00;
+    --main-color: #43801a;
     --big-font: 4rem;
     --h2-font: 3rem;
     --p-font: 1.1rem;
