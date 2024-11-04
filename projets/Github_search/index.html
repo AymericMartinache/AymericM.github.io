@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Recherche Utilisateurs GitHub</title>
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/png" href="./ico/favicon.ico" />
+    </head>
+    <body>
+        <h1>Github <span>Search</span></h1>
+
+        <!-- Section d'introduction -->
+        <section class="projet-home_section" id="home">
+            <img
+                src="./img/Github-logo.png"
+                alt="logo Recherche Utilisateurs GitHub"
+                class="projet-home_logo"
+            />
+            <p>
+                Découvrez <strong>"Github Search 🔎"</strong>, une application
+                permettant de rechercher des utilisateurs GitHub en utilisant
+                l'API de GitHub et développée avec <strong>React</strong>,
+                <strong>TypeScript</strong>, et <strong>Semantic UI</strong>.
+                Une interface simple et intuitive pour retrouver les
+                contributeurs du monde entier.
+            </p>
+            <br />
+            <p>
+                Grâce à l'<strong
+                    ><a
+                        id="api"
+                        href="https://docs.github.com/en/rest?apiVersion=2022-11-28"
+                        target="_blank"
+                        >API GitHub</a
+                    ></strong
+                >, cette application affiche des résultats en temps réel, sous
+                forme de cartes dynamiques.
+            </p>
+            <div id="projet-file">
+                <a
+                    href="https://mrik-github-search.vercel.app/"
+                    target="_blank"
+                    class="btn"
+                >
+                    <img
+                        class="icon"
+                        src="../../ico/internet-50.png"
+                        alt="logo accéder"
+                    />
+                    Accéder à l'appli</a
+                >
+            </div>
+            <div id="projet-file">
+                <a
+                    href="https://github.com/AymericMartinache/Github_search.git"
+                    target="_blank"
+                    class="btn"
+                >
+                    <img
+                        class="icon"
+                        src="../../ico/github-60.png"
+                        alt="logo GitHub"
+                    />
+                    Accéder au repo</a
+                >
+            </div>
+        </section>
+
+        <!-- Aspects techniques -->
+        <section class="projet-tech_section">
+            <h2>Aspects techniques</h2>
+            <p>
+                Ce projet met en œuvre des technologies modernes pour assurer
+                une performance et une maintenabilité optimales.
+            </p>
+            <div class="service-content">
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="../../ico/clavier-94.png"
+                            alt="Icone Clavier"
+                        />
+                        <h3>Frontend</h3>
+                    </div>
+                    <p>
+                        L'application utilise <strong>React</strong> pour une
+                        interface utilisateur réactive et
+                        <strong>TypeScript</strong> pour un code robuste et
+                        typé. <strong>Semantic UI</strong> assure une mise en
+                        forme rapide et élégante des composants. Les appels API
+                        sont gérés par <strong>Axios</strong> pour faciliter la
+                        récupération des données.
+                    </p>
+                    <div class="icones-list">
+                        <img
+                            src="../../ico/react-24.png"
+                            alt="icone React.js"
+                            class="icone-item-next"
+                        />
+                        <img
+                            src="../../ico/typescript-48.png"
+                            alt="icone TypeScript"
+                            class="icone-item"
+                        />
+                        <img
+                            src="../../ico/axios-icone.png"
+                            alt="icone Semantic UI"
+                            class="icone-item"
+                        />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fonctionnalités clés -->
+        <section class="projet-fonctionnalites_section">
+            <h2>Fonctionnalités clés</h2>
+            <ul>
+                <li>
+                    <strong>Recherche d'utilisateurs GitHub :</strong> Entrez un
+                    nom d'utilisateur et recevez des résultats détaillés sous
+                    forme de cartes.
+                </li>
+                <li>
+                    <strong>Pagination et chargement dynamique : </strong>
+                    Affichez plus de résultats avec un bouton de chargement de
+                    résultats supplémentaires
+                </li>
+                <li>
+                    <strong>Notifications d'erreur : </strong> Avertit
+                    l'utilisateur en cas d'erreur de recherche ou d'absence de
+                    résultats.
+                </li>
+                <li>
+                    <strong>Détails d'une carte : </strong> Permet d'accéder aux
+                    détails d'une carte affichée.
+                </li>
+            </ul>
+        </section>
+
+        <!-- Gallery -->
+        <section class="projet-gallery_section">
+            <h2>En images...</h2>
+            <div class="gallery">
+                <img
+                    src="./img/img1.png"
+                    alt="Image de recherche GitHub 1"
+                    class="gallery-item"
+                />
+                <img
+                    src="./img/img2.png"
+                    alt="Image de recherche GitHub 2"
+                    class="gallery-item"
+                />
+                <img
+                    src="./img/img3.png"
+                    alt="Image de recherche GitHub 3"
+                    class="gallery-item"
+                />
+                <img
+                    src="./img/img4.png"
+                    alt="Image de recherche GitHub 3"
+                    class="gallery-item"
+                />
+                <img
+                    src="./img/img5.png"
+                    alt="Image de recherche GitHub 3"
+                    class="gallery-item"
+                />
+                <img
+                    src="./img/img6.png"
+                    alt="Image de recherche GitHub 3"
+                    class="gallery-item"
+                />
+            </div>
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightboxImage" />
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <section class="footer">
+            <div class="footer-text">
+                <p>Copyright © 2024 - MRikCorp</p>
+            </div>
+            <div class="top">
+                <button onclick="scrollToTop()">
+                    <i class="bx bx-up-arrow-alt"></i>
+                </button>
+            </div>
+        </section>
+
+        <script src="./script.js"></script>
+    </body>
+</html>
