@@ -1,356 +1,568 @@
 <!DOCTYPE html>
 <html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Mon CV</title>
+        <meta
+            name="description"
+            content="Découvrez le CV d'Aymeric Martinache, développeur web front-end spécialisé dans la création d'interfaces utilisateur modernes et performantes. Avec une solide expérience en informatique et une expertise en React, TypeScript, et CSS, Aymeric combine créativité et compétences techniques pour offrir des solutions web intuitives et optimisées. Disponible pour de nouveaux défis professionnels !"
+        />
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./style.css" />
+        <link rel="icon" type="image/png" href="./ico/favicon.ico" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
-    <meta name="description" content="Découvrez le CV d'Aymeric Martinache, développeur web front-end spécialisé dans la création d'interfaces utilisateur modernes et performantes. Avec une solide expérience en informatique et une expertise en React, TypeScript, et CSS, Aymeric combine créativité et compétences techniques pour offrir des solutions web intuitives et optimisées. Disponible pour de nouveaux défis professionnels !">
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Protest+Revolution&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="icon" type="image/png" href="./ico/favicon.ico" />
-</head>
+    <body>
+        <!-- Header section -->
+        <header>
+            <a href="#" class="logo"
+                >Mon <span>Savoir</span> à votre <span>Service</span>...
+            </a>
 
-<body>
+            <ul class="navlist">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">A Propos</a></li>
+                <li><a href="#services">Compétences</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
 
-    <!-- Header section -->
-    <header>
-        <a href="#" class="logo">Mon <span>Savoir</span> à votre <span>Service</span>... </a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </header>
 
-        <ul class="navlist">
-            <li><a href="#home" class="active">Home</a></li>
-            <li><a href="#about">A Propos</a></li>
-            <li><a href="#services">Compétences</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contacts</a></li>
-        </ul>
-
-        <div class="bx bx-menu" id="menu-icon"></div>
-    </header>
-
-    <!-- Home section -->
-    <section class="home" id="home">
-        <div class="home-text">
-            <div class="slide">
-                <span class="one">Bonjour !</span>
-                <span class="two">Je suis...</span>
-            </div>
-            <h1>Aymeric MARTINACHE</h1>
-
-            <h3>Developpeur <span>Web.</span></h3>
-
-            <p>Développeur Web Front End, c'est quoi ? </p>
-
-            <p>En tant que développeur web front-end, je me spécialise dans la création d’interfaces utilisateur attrayantes, intuitives et performantes. Mon travail consiste à transformer des designs en expériences web interactives en utilisant des technologies telles que HTML, CSS, JavaScript, et des frameworks comme React. Je veille à ce que chaque site web ou application que je développe soit non seulement esthétiquement plaisant, mais aussi optimisé pour une performance fluide sur tous les appareils et navigateurs. Collaborant étroitement avec les designers, je m’assure que la vision créative est parfaitement réalisée tout en intégrant les meilleures pratiques en matière de responsive design et d’accessibilité.</p>
-
-            <div class="button">
-                <a href="#contact" class="btn">Me contacter</a>
-                <a href="#portfolio" class="btn2"><span><i class='bx bx-play'></i></span>Mes projets</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- About section -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="./img/moi.jpg" alt="photo de Aymeric">
-        </div>
-
-        <div class="about-text">
-            <h2>A propos de <span>Moi</span></h2>
-            <p>Moi en quelques mots...</p> 
-
-            <p>Passionné par les nouvelles technologies depuis mon plus jeune âge, je me suis orienté vers le développement web front-end, une discipline où je peux allier créativité et technologie. Après avoir récemment achevé une formation intensive à l’école O’clock, je me suis concentré sur le développement front-end, tout en acquérant des compétences en back-end pour avoir une compréhension complète des projets sur lesquels je travaille.</p>
-
-            <p>À 40 ans, avec une expérience diversifiée dans l’informatique, j’ai débuté comme dépanneur informatique et télécoms, avant de devenir hotlineur et formateur chez un grand fournisseur d’accès à Internet. Mon dernier poste de responsable informatique m’a permis de gérer des projets complexes et d’acquérir une solide expertise en gestion de projets IT.</p>
-                
-            <p>Aujourd’hui, bien que j’aie des compétences Full Stack, ma préférence va clairement vers le développement front-end. C’est dans cette discipline que je m’épanouis le plus, en créant des interfaces utilisateurs dynamiques et en apportant une touche personnelle à chaque projet. Je me prépare également à passer mon titre professionnel DWWM, ce qui validera officiellement mes compétences et marquera le début de ma carrière en tant que développeur front-end.</p>
-            
-            <a href="#services" class="btn">Mon parcours...</a>
-        </div>
-    </section>
-
-    <!-- Compétences section -->
-    <section class="services" id="services">
-
-        <div class="main-text">
-            <h2><span>Mes </span>Compétences</h2>
-        </div>
-
-        <div class="service-content">
-
-            <!-- Boxes -->
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/computer-34.png" alt="">
+        <!-- Home section -->
+        <section class="home" id="home">
+            <div class="home-text">
+                <div class="slide">
+                    <span class="one">Bonjour !</span>
+                    <span class="two">Je suis...</span>
                 </div>
-                <h3>Technicien informatique </h3>
-                <ul>
-                    <li>✔ Installation et dépannage informatique pour les particuliers</li>
-                    <li>✔ Aide aux utilisateurs</li>
-                    <li>✔ Audit informatique</li>
-                    <li>✔ Gestion et maintenance d'un parc informatique professionnel</li>
-                </ul>
+                <h1>Aymeric MARTINACHE</h1>
+
+                <h3>Developpeur <span>Web.</span></h3>
+
+                <p>Développeur Web Front End, c'est quoi ?</p>
+
+                <p>
+                    En tant que développeur web front-end, je me spécialise dans
+                    la création d’interfaces utilisateur attrayantes, intuitives
+                    et performantes. Mon travail consiste à transformer des
+                    designs en expériences web interactives en utilisant des
+                    technologies telles que HTML, CSS, JavaScript, et des
+                    frameworks comme React. Je veille à ce que chaque site web
+                    ou application que je développe soit non seulement
+                    esthétiquement plaisant, mais aussi optimisé pour une
+                    performance fluide sur tous les appareils et navigateurs.
+                    Collaborant étroitement avec les designers, je m’assure que
+                    la vision créative est parfaitement réalisée tout en
+                    intégrant les meilleures pratiques en matière de responsive
+                    design et d’accessibilité.
+                </p>
+
+                <div class="button">
+                    <a href="#contact" class="btn">Me contacter</a>
+                    <a href="#portfolio" class="btn2"
+                        ><span><i class="bx bx-play"></i></span>Mes projets</a
+                    >
+                </div>
+            </div>
+        </section>
+
+        <!-- About section -->
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="./img/moi.jpg" alt="photo de Aymeric" />
             </div>
 
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/telecom-34.png" alt="">
-                </div>
-                <h3>Communication</h3>
-                <ul>                     
-                     <li>✔ Sous-traitance télécom pour plusieurs FAI durant l'essort de l'ADSL.</li>
-                     <li>✔ Installation des lignes ADSL.</li>
-                     <li>✔ Installation de box internet chez les particuliers et les professionnels ainsi que leur maintenance.</li>
-                </ul>
+            <div class="about-text">
+                <h2>A propos de <span>Moi</span></h2>
+                <p>Moi en quelques mots...</p>
+
+                <p>
+                    Passionné par les nouvelles technologies depuis mon plus
+                    jeune âge, je me suis orienté vers le développement web
+                    front-end, une discipline où je peux allier créativité et
+                    technologie. Après avoir récemment achevé une formation
+                    intensive à l’école O’clock, je me suis concentré sur le
+                    développement front-end, tout en acquérant des compétences
+                    en back-end pour avoir une compréhension complète des
+                    projets sur lesquels je travaille.
+                </p>
+
+                <p>
+                    À 40 ans, avec une expérience diversifiée dans
+                    l’informatique, j’ai débuté comme dépanneur informatique et
+                    télécoms, avant de devenir hotlineur et formateur chez un
+                    grand fournisseur d’accès à Internet. Mon dernier poste de
+                    responsable informatique m’a permis de gérer des projets
+                    complexes et d’acquérir une solide expertise en gestion de
+                    projets IT.
+                </p>
+
+                <p>
+                    Aujourd’hui, bien que j’aie des compétences Full Stack, ma
+                    préférence va clairement vers le développement front-end.
+                    C’est dans cette discipline que je m’épanouis le plus, en
+                    créant des interfaces utilisateurs dynamiques et en
+                    apportant une touche personnelle à chaque projet. Je me
+                    prépare également à passer mon titre professionnel DWWM, ce
+                    qui validera officiellement mes compétences et marquera le
+                    début de ma carrière en tant que développeur front-end.
+                </p>
+
+                <a href="#services" class="btn">Mon parcours...</a>
+            </div>
+        </section>
+
+        <!-- Compétences section -->
+        <section class="services" id="services">
+            <div class="main-text">
+                <h2><span>Mes </span>Compétences</h2>
             </div>
 
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/network-34.png" alt="">
+            <div class="service-content">
+                <!-- Boxes -->
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="./ico/computer-34.png"
+                            alt=""
+                        />
+                    </div>
+                    <h3>Technicien informatique</h3>
+                    <ul>
+                        <li>
+                            ✔ Installation et dépannage informatique pour les
+                            particuliers
+                        </li>
+                        <li>✔ Aide aux utilisateurs</li>
+                        <li>✔ Audit informatique</li>
+                        <li>
+                            ✔ Gestion et maintenance d'un parc informatique
+                            professionnel
+                        </li>
+                    </ul>
                 </div>
-                <h3>Réseau et infrastructures</h3>
-                <ul>                     
-                    <li>✔ Installation et gestion réseaux niveau 1</li>
-                    <li>✔ Maintenance réseau d'entreprise (PME)</li>
-                    <li>✔ Mise en place réseaux virtuels Microsoft Azure</li>
-               </ul>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="./ico/telecom-34.png"
+                            alt=""
+                        />
+                    </div>
+                    <h3>Communication</h3>
+                    <ul>
+                        <li>
+                            ✔ Sous-traitance télécom pour plusieurs FAI durant
+                            l'essort de l'ADSL.
+                        </li>
+                        <li>✔ Installation des lignes ADSL.</li>
+                        <li>
+                            ✔ Installation de box internet chez les particuliers
+                            et les professionnels ainsi que leur maintenance.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="./ico/network-34.png"
+                            alt=""
+                        />
+                    </div>
+                    <h3>Réseau et infrastructures</h3>
+                    <ul>
+                        <li>✔ Installation et gestion réseaux niveau 1</li>
+                        <li>✔ Maintenance réseau d'entreprise (PME)</li>
+                        <li>
+                            ✔ Mise en place réseaux virtuels Microsoft Azure
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <img class="bx-icon" src="./ico/helper-34.png" alt="" />
+                    </div>
+                    <h3>Téléassistance</h3>
+                    <ul>
+                        <li>✔ Opérateur hotline service technique</li>
+                        <li>✔ Formateur nouvel opérateur</li>
+                        <li>✔ Support utilisateurs</li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="./ico/microsoft-48.png"
+                            alt=""
+                        />
+                    </div>
+                    <h3>Environnement Microsoft</h3>
+                    <ul>
+                        <li>✔ Gouvernance Microsoft Azure</li>
+                        <li>✔ Gouvernance Microsoft 365 / Office 365</li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <img class="bx-icon" src="./ico/sql-34.png" alt="" />
+                    </div>
+                    <h3>Gestion base de données</h3>
+                    <ul>
+                        <li>✔ Mise en place de bases de données SQL</li>
+                        <li>✔ Analyse et extraction data SQL</li>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <img class="bx-icon" src="./ico/school-34.png" alt="" />
+                    </div>
+                    <h3>Apprentissage</h3>
+                    <ul>
+                        <li>
+                            ✔ Optention du
+                            <strong>Titre Professionnel DWWM</strong> suite à
+                            formation de Web Develeppeur Full Stack chez O'clock
+                        </li>
+                        <li>
+                            ✔ Apprentissage en autodidacte de langages de
+                            programmation sur des plateforme de e-learning
+                        </li>
+                        <a href="https://oclock.io/" target="_blank"
+                            ><img
+                                src="./ico/oclock.jpeg"
+                                alt="Site de l'école o'clock"
+                                class="learn-logo"
+                        /></a>
+                        <a href="https://www.udemy.com/" target="_blank"
+                            ><img
+                                src="ico/udemy-96.png"
+                                alt="Site de Udemy"
+                                class="learn-logo"
+                        /></a>
+                        <a href="https://www.ecole-du-web.net/" target="_blank"
+                            ><img
+                                src="./ico/ecole-du-web.png"
+                                alt="Site de l'école du web"
+                                class="learn-logo"
+                        /></a>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <img
+                            class="bx-icon"
+                            src="./ico/clavier-94.png"
+                            alt=""
+                        />
+                    </div>
+                    <h3>Langages de programmation</h3>
+                    <ul class="language-list">
+                        <div class="language-list__item">
+                            ✔ HTML
+                            <img
+                                src="./ico/html-24.png"
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+
+                        <div class="language-list__item">
+                            ✔ CSS
+                            <img
+                                src="./ico/css-24.png"
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+
+                        <div class="language-list__item">
+                            ✔ PHP
+                            <img
+                                src="./ico/php-24.png"
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+
+                        <div class="language-list__item">
+                            ✔ JavaScript
+                            <img
+                                src="./ico/javascript-24.png"
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+
+                        <div class="language-list__item">
+                            ✔ React
+                            <img
+                                src="./ico/react-24.png    "
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+                        <div class="language-list__item">
+                            ✔ NextJS
+                            <img
+                                src="./ico/NextJS-24.png"
+                                alt=""
+                                class="learn-logo"
+                                style="border-radius: 50%"
+                            />
+                        </div>
+                        <div class="language-list__item">
+                            ✔ Tailwind
+                            <img
+                                src="./ico/Tailwind-24.png"
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="box">
+                    <div class="s-icons">
+                        <img class="bx-icon" src="./ico/sac.png" alt="" />
+                    </div>
+                    <h3>Outils</h3>
+                    <ul class="language-list">
+                        <div class="language-list__item">
+                            ✔ Figma
+                            <img
+                                src="./ico/figma-48.png"
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+
+                        <div class="language-list__item">
+                            ✔ Git / Github
+                            <img
+                                src="./ico/git-24.png"
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+
+                        <div class="language-list__item">
+                            ✔ Trello
+                            <img
+                                src="./ico/trello-24.png"
+                                alt=""
+                                class="learn-logo"
+                            />
+                        </div>
+                    </ul>
+                </div>
             </div>
 
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/helper-34.png" alt="">
-                </div>
-                <h3>Téléassistance</h3>
-                <ul>                     
-                    <li>✔ Opérateur hotline service technique</li>
-                    <li>✔ Formateur nouvel opérateur</li>
-                    <li>✔ Support utilisateurs</li>
-                </ul>
+            <!-- Télécharger mon CV -->
+            <div id="CV">
+                <a href="./docs/Mon_CV.pdf" target="_blank" class="btn">
+                    <img
+                        class="bx-icon"
+                        src="./ico/download-24.png"
+                        alt="logo télécharger"
+                    />
+                    Mon CV</a
+                >
+            </div>
+        </section>
+
+        <!-- Portfolio section -->
+        <section class="portfolio" id="portfolio">
+            <div class="main-text">
+                <h2><span>Mes derniers </span>Projets</h2>
             </div>
 
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/microsoft-48.png" alt="">
+            <div class="portfolio-content">
+                <!-- Projet 1 -->
+                <div class="row">
+                    <img
+                        src="./projets/OPetitsOignons/img/logo-oignon.webp"
+                        alt="Logo Opetits-oignons"
+                    />
+                    <div class="layer">
+                        <h5>O'petits Oignons</h5>
+                        <p>
+                            Ce projet à été réalisé en vue de l'optention du
+                            Titre Professionnel "Devellopeur Web et Web Mobile"
+                        </p>
+                        <a
+                            href="./projets/OPetitsOignons/index.html"
+                            target="_blank"
+                            aria-label="Accéder à plus d'informations sur l'application O'petits Oignons"
+                            ><i class="bx bx-link"></i
+                        ></a>
+                    </div>
                 </div>
-                <h3>Environnement Microsoft</h3>
-                <ul>                     
-                    <li>✔ Gouvernance Microsoft Azure</li>
-                    <li>✔ Gouvernance Microsoft 365 / Office 365</li>
-                </ul>
+
+                <!-- Projet 2 -->
+                <div class="row">
+                    <img src="./projets/Pokedex/img/pokedex.webp" alt="" />
+                    <div class="layer">
+                        <h5>Next Pokedex</h5>
+                        <p>
+                            Ce projet a été réalisé durant ma formation chez
+                            O'clock
+                        </p>
+                        <a
+                            href="./projets/Pokedex/index.html"
+                            target="_blank"
+                            aria-label="Accéder à plus d'informations sur l'application Next Pokedex"
+                            ><i class="bx bx-link"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 -->
+                <div class="row">
+                    <img
+                        src="./projets/Github_search/img/Github_background.png"
+                        alt=""
+                    />
+                    <div class="layer">
+                        <h5>Github Search</h5>
+                        <p>
+                            Ce projet a été réalisé durant ma formation chez
+                            O'clock
+                        </p>
+                        <a
+                            href="./projets/Github_search/index.html"
+                            target="_blank"
+                            ><i class="bx bx-link"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- Projet 4 -->
+                <div class="row">
+                    <img
+                        src="./projets/WidgetMeteo/img/background.avif"
+                        alt="image de la météo"
+                    />
+                    <div class="layer">
+                        <h5>Widget Météo</h5>
+                        <p>
+                            Ce projet a été réalisé durant ma formation chez
+                            O'clock
+                        </p>
+                        <a
+                            href="./projets/WidgetMeteo/index.html"
+                            target="_blank"
+                            aria-label="Accéder à plus d'informations sur l'application Widget Météo"
+                            ><i class="bx bx-link"></i
+                        ></a>
+                    </div>
+                </div>
+
+                <!-- Projet 5 -->
+                <div class="row">
+                    <img
+                        src="./projets/ZipCode/img/background-mailbox.jpg"
+                        alt=""
+                    />
+                    <div class="layer">
+                        <h5>Zip Code</h5>
+                        <p>
+                            LCe projet a été réalisé durant ma formation chez
+                            O'clock
+                        </p>
+                        <a
+                            href="./projets/ZipCode/index.html"
+                            target="_blank"
+                            aria-label="Accéder à plus d'informations sur l'application Zip Code"
+                            ><i class="bx bx-link"></i
+                        ></a>
+                    </div>
+                </div>
             </div>
+        </section>
 
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/sql-34.png" alt="">
-                </div>
-                <h3>Gestion base de données</h3>
-                <ul>                     
-                    <li>✔ Mise en place de bases de données SQL</li>
-                    <li>✔ Analyse et extraction data SQL</li>
-                </ul>
-            </div>
+        <!-- contact section -->
+        <section class="contact" id="contact">
+            <div class="contact-text">
+                <h2>Contactez-<span>moi !</span></h2>
+                <h4>Pour plus d'informations...</h4>
 
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/school-34.png" alt="">
-                </div>
-                <h3>Apprentissage</h3>
-                <ul>                     
-                    <li>✔ Optention du <strong>Titre Professionnel DWWM</strong> suite à formation de Web Develeppeur Full Stack chez O'clock</li> 
-                    <li>✔ Apprentissage en autodidacte de langages de programmation sur des plateforme de e-learning</li> 
-                    <a href="https://oclock.io/" target="_blank"><img src="./ico/oclock.jpeg" alt="Site de l'école o'clock" class="learn-logo"></a>
-                    <a href="https://www.udemy.com/" target="_blank"><img src="ico/udemy-96.png" alt="Site de Udemy" class="learn-logo"></a>
-                    <a href="https://www.ecole-du-web.net/" target="_blank"><img src="./ico/ecole-du-web.png" alt="Site de l'école du web" class="learn-logo"></a>
-                </ul>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/clavier-94.png" alt="">
-                </div>
-                <h3>Langages de programmation</h3>
-                <ul class="language-list">  
-
-                    <div class="language-list__item">
-                        ✔ HTML                   
-                        <img src="./ico/html-24.png" alt="" class="learn-logo">
+                <div class="contact-icons">
+                    <div class="tooltip">
+                        <span class="tooltiptext"
+                            ><img
+                                src="./ico/mail-24.png"
+                                alt=""
+                            />aymeric.martinache@gmail.com</span
+                        >
+                        <a
+                            href="mailto:aymeric.martinache@gmail.com"
+                            target="_blank"
+                            aria-label="M'envoyer un email"
+                            ><i class="bx bxs-envelope"></i
+                        ></a>
                     </div>
 
-                    <div class="language-list__item">
-                        ✔ CSS
-                        <img src="./ico/css-24.png" alt="" class="learn-logo">
+                    <div class="tooltip">
+                        <span class="tooltiptext"
+                            ><img
+                                src="./ico/smartphone-24.png"
+                                alt=""
+                            />+33633038110</span
+                        >
+                        <a
+                            href="tel:+33633038110"
+                            target="_blank"
+                            aria-label="Contactez moi par téléphone au 0633038110"
+                            ><i class="bx bx-phone-call"></i>
+                        </a>
                     </div>
 
-                    <div class="language-list__item">
-                        ✔ PHP
-                        <img src="./ico/php-24.png" alt="" class="learn-logo">
-                    </div>
-
-                    <div class="language-list__item">
-                        ✔ JavaScript
-                        <img src="./ico/javascript-24.png" alt="" class="learn-logo">
-                    </div>  
-
-                    <div class="language-list__item">
-                        ✔ React
-                        <img src="./ico/react-24.png    " alt="" class="learn-logo">
-                    </div>  
-                    <div class="language-list__item">
-                        ✔ NextJS
-                        <img src="./ico/NextJS-24.png" alt="" class="learn-logo" style="border-radius: 50%;">
-                    </div>  
-                    <div class="language-list__item">
-                        ✔ Tailwind
-                        <img src="./ico/Tailwind-24.png" alt="" class="learn-logo" >
-                    </div>  
-                </ul>
-            </div>
-
-            <div class="box">
-                <div class="s-icons">
-                    <img class="bx-icon" src="./ico/sac.png" alt="">
-                </div>
-                <h3>Outils</h3>
-                <ul class="language-list">  
-
-                    <div class="language-list__item">
-                        ✔ Figma                   
-                        <img src="./ico/figma-48.png" alt="" class="learn-logo">
-                    </div>
-
-                    <div class="language-list__item">
-                        ✔ Git / Github
-                        <img src="./ico/git-24.png" alt="" class="learn-logo">
-                    </div>
-
-                    <div class="language-list__item">
-                        ✔ Trello
-                        <img src="./ico/trello-24.png" alt="" class="learn-logo">
-                    </div>  
-                </ul>
-            </div>
-        </div>
-        
-        <!-- Télécharger mon CV -->
-        <div id="CV">
-            <a href="./docs/Mon_CV.pdf" target="_blank" class="btn">
-                <img class="bx-icon" src="./ico/download-24.png" alt="logo télécharger">  Mon CV</a>
-        </div>
-
-    </section>
-
-  <!-- Portfolio section -->
-  <section class="portfolio" id="portfolio">
-    <div class="main-text">
-        <h2><span>Mes derniers </span>Projets</h2>
-    </div>
-
-    <div class="portfolio-content">
-        <!-- Projet 1 -->
-        <div class="row">
-            <img src="./projets/OPetitsOignons/img/logo-oignon.webp" alt="Logo Opetits-oignons">
-            <div class="layer">
-                <h5>O'petits Oignons</h5>
-                <p>Ce projet à été réalisé en vue de l'optention du Titre Professionnel "Devellopeur Web et Web Mobile"</p>
-                <a href="./projets/OPetitsOignons/index.html" target="_blank" aria-label="Accéder à plus d'informations sur l'application O'petits Oignons"><i class='bx bx-link'></i></a>
-            </div>
-        </div>
-
-        <!-- Projet 2 -->
-        <div class="row">
-            <img src="./projets/Pokedex/img/pokedex.webp" alt="" >
-            <div class="layer">
-                <h5>Next Pokedex</h5>
-                <p>Ce projet a été réalisé durant ma formation chez O'clock</p>
-                <a href="./projets/Pokedex/index.html" target="_blank" aria-label="Accéder à plus d'informations sur l'application Next Pokedex"><i class='bx bx-link'></i></a>
-            </div>
-        </div>
-
-        <!-- Projet 3 -->
-        <div class="row">
-            <img src="./projets/Github_search/img/Github_background.png" alt="">
-            <div class="layer">
-                <h5>Github Search</h5>
-                <p>Ce projet a été réalisé durant ma formation chez O'clock</p>
-                <a href="./projets/Github_search/index.html" target="_blank"><i class='bx bx-link'></i></a>
-            </div>
-        </div>
-
-        <!-- Projet 4 -->
-        <div class="row">
-            <img src="./projets/WidgetMeteo/img/background.avif" alt="image de la météo">
-            <div class="layer">
-                <h5>Widget Météo</h5>
-                <p>Ce projet a été réalisé durant ma formation chez O'clock</p>
-                <a href="./projets/WidgetMeteo/index.html" target="_blank" aria-label="Accéder à plus d'informations sur l'application Widget Météo"><i class='bx bx-link'></i></a>
-            </div>
-        </div>
-
-        <!-- Projet 5 -->
-        <div class="row">
-            <img src="./projets/ZipCode/img/background-mailbox.jpg" alt="">
-            <div class="layer">
-                <h5>Zip Code</h5>
-                <p>LCe projet a été réalisé durant ma formation chez O'clock</p>
-                <a href="./projets/ZipCode/index.html" target="_blank" aria-label="Accéder à plus d'informations sur l'application Zip Code"><i class='bx bx-link'></i></a>
-            </div>
-        </div>
-
-
-
-        <!-- <div class="row">
-            <img src="img/visualdesign.jpeg" alt="">
-            <div class="layer">
-                <h5>Projet n°6
-                </h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere dignissimos atque illo eligendi
-                    fugit quae dolores ipsum ratione facilis est.</p>
-                <a href="#"><i class='bx bx-link'></i></a>
-            </div>
-        </div> -->
-    </div>
-</section>
-
-
-    
-    <!-- contact section -->
-    <section class="contact" id="contact">
-
-        <div class="contact-text">
-            <h2>Contactez-<span>moi !</span></h2>
-            <h4>Pour plus d'informations...</h4>
-
-            <div class="contact-icons">
-
-                <div class="tooltip">
-                    <span class="tooltiptext"><img src="./ico/mail-24.png" alt="">aymeric.martinache@gmail.com</span>
-                    <a href="mailto:aymeric.martinache@gmail.com"" target="_blank" aria-label="M'envoyer un email"><i class="bx bxs-envelope"></i>
+                    <a
+                        href="https://github.com/AymericMartinache"
+                        target="_blank"
+                        aria-label="Accédez à mon profile Github"
+                        ><i class="bx bxl-github"></i>
                     </a>
+
+                    <a
+                        href="https://www.linkedin.com/in/aymeric-martinache-2748812b8/"
+                        target="_blank"
+                        aria-label="Accédez à mon profile linkedin"
+                        ><i class="bx bxl-linkedin"></i
+                    ></a>
                 </div>
-
-                <div class="tooltip">
-                    <span class="tooltiptext"><img src="./ico/smartphone-24.png" alt="">+33633038110</span>
-                    <a href="tel:+33633038110" target="_blank" aria-label="Contactez moi par téléphone au 0633038110"><i class="bx bx-phone-call"></i>
-                    </a>
-                </div>
-
-                <a href="https://github.com/AymericMartinache" target="_blank" aria-label="Accédez à mon profile Github"><i class="bx bxl-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/aymeric-martinache-2748812b8/" target="_blank" aria-label="Accédez à mon profile linkedin"><i class="bx bxl-linkedin"></i></a>
             </div>
-        </div>
 
-        <!-- <div class="contact-form">
+            <!-- <div class="contact-form">
             <form action="">
                 <input type="name" placeholder="Votre nom" required>
                 <input type="email" placeholder="Votre email" required>
@@ -359,23 +571,22 @@
                 <input type="submit" value="Envoyer !" class="submit" required>
             </form>
         </div> -->
-    </section>
+        </section>
 
-    <!-- end section -->
-    <section class="end">
-        <div class="end-text">
-            <p>Copyright © 2024 - MRikCorp</p>
-        </div>
+        <!-- end section -->
+        <section class="end">
+            <div class="end-text">
+                <p>Copyright © 2024 - MRikCorp</p>
+            </div>
 
-        <div class="top">
-            <a href="#home" aria-label="Remonter tout en haut de la page"><i class='bx bx-up-arrow-alt'></i></a>
-        </div>
-    </section>
+            <div class="top">
+                <a href="#home" aria-label="Remonter tout en haut de la page"
+                    ><i class="bx bx-up-arrow-alt"></i
+                ></a>
+            </div>
+        </section>
 
-
-    <!-- script js -->
-    <script type="text/javascript" src="script.js"></script>
-
-</body>
-
+        <!-- script js -->
+        <script type="text/javascript" src="script.js"></script>
+    </body>
 </html>
